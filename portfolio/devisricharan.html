@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devisricharan Vurlugonda - Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #007bff;
+            --secondary-color: #6c757d;
+            --dark-color: #343a40;
+            --light-color: #f8f9fa;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: var(--dark-color);
+            background-color: var(--light-color);
+        }
+
+        .navbar {
+            background-color: white;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .jumbotron {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 8rem 2rem;
+            text-align: center;
+            border-radius: 0;
+        }
+
+        .jumbotron h1 {
+            font-weight: 700;
+        }
+
+        .jumbotron p {
+            font-size: 1.5rem;
+        }
+
+        .section {
+            padding: 5rem 0;
+        }
+
+        .section-heading {
+            text-align: center;
+            margin-bottom: 4rem;
+            position: relative;
+        }
+
+        .section-heading h2 {
+            font-weight: 600;
+            display: inline-block;
+            position: relative;
+            padding-bottom: 0.5rem;
+        }
+        
+        .section-heading h2::after {
+            content: '';
+            display: block;
+            width: 50%;
+            height: 3px;
+            background-color: var(--primary-color);
+            margin: auto;
+            margin-top: 0.5rem;
+        }
+
+        .card {
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            height: 100%;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+        }
+
+        .card-title {
+            color: var(--primary-color);
+            font-weight: 600;
+        }
+
+        .list-group-item {
+            background-color: transparent;
+            border-color: rgba(0,0,0,0.1);
+        }
+
+        .skills-list .badge {
+            font-size: 1rem;
+            padding: 0.75rem 1rem;
+            margin: 0.5rem;
+        }
+        
+        .footer {
+            background-color: var(--dark-color);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">Devisricharan V.</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#internship">Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#education">Education</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="jumbotron text-center">
+        <div class="container">
+            <h1 class="display-3">DEVISRICHARAN VURLUGONDA</h1>
+            <p class="lead">AWS Cloud | Web Automation & Data Management</p>
+            <hr class="my-4">
+           <p>Passionate about using technology to streamline processes and enhance user experience. </p>
+            <a href="mailto:devisricharan226@gmail.com" class="btn btn-light btn-lg m-2"><i class="fas fa-envelope"></i> Email Me</a>
+            <a href="tel:+919550814226" class="btn btn-outline-light btn-lg m-2"><i class="fas fa-phone"></i> Call Me</a>
+        </div>
+    </div>
+
+    <section id="about" class="section">
+        <div class="container">
+            <div class="section-heading"><h2>About Me</h2></div>
+            <p class="text-center mx-auto" style="max-width: 800px;">
+               As a Junior Developer, I have experience in building web automation and data management solutions using Python, Selenium, and MySQL. I am also skilled in front-end development with React, HTML, and CSS, and knowledgeable in creating automation workflows to improve efficiency. My focus is on leveraging technology to create more streamlined and user-friendly processes.
+            </p>
+        </div>
+    </section>
+
+    <section id="projects" class="section bg-light">
+        <div class="container">
+            <div class="section-heading"><h2>Projects</h2></div>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="card p-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Employee Management System</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Full Stack Development (12/2023 - 01/2024)</h6>
+                            <p class="card-text">
+                               Implemented a secure Employee Management System with distinct user interfaces for administrators and employees. The system, developed using HTML, CSS, and JavaScript for the front end and Python for backend connectivity, offered seamless navigation based on user credentials. A robust connection was established between the front end and a MySQL database.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card p-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Machine Learning for Fish Disease Detection</h5>
+                            [cite_start]<h6 class="card-subtitle mb-2 text-muted">A Machine Learning Approach</h6>
+                            <p class="card-text">
+                                Developed a machine learning model for the early detection of fish diseases by analyzing water quality parameters. This project utilized data-driven techniques to improve aquaculture health management and minimize economic losses.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section">
+        <div class="container">
+            <div class="section-heading"><h2>Skills</h2></div>
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-4">
+                    <div class="card p-3 text-center">
+                        <h5 class="card-title">Programming Languages</h5>
+                        <div class="skills-list">
+                           <span class="badge bg-primary">Python </span>
+                            <span class="badge bg-primary">SQL </span>
+                            <span class="badge bg-primary">HTML </span>
+                            <span class="badge bg-primary">CSS </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card p-3 text-center">
+                        <h5 class="card-title">Libraries & Frameworks</h5>
+                        <div class="skills-list">
+                            <span class="badge bg-success">Bootstrap </span>
+                           <span class="badge bg-success">Selenium </span>
+                           <span class="badge bg-success">Django </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card p-3 text-center">
+                        <h5 class="card-title">DevOps & Cloud</h5>
+                        <div class="skills-list">
+                            <span class="badge bg-info">Git</span>
+                           <span class="badge bg-info">GitHub </span>
+                            <span class="badge bg-info">CI/CD </span>
+                           <span class="badge bg-warning text-dark">AWS</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="internship" class="section bg-light">
+        <div class="container">
+            <div class="section-heading"><h2>Internship</h2></div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="card p-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Intern at Blue_botica</h5>
+                           <h6 class="card-subtitle mb-2 text-muted">MAR 2024 - MAR 2025 </h6>
+                            <ul class="list-group list-group-flush mt-3">
+                                <li class="list-group-item">Gained hands-on experience in front-end development using React.js, HTML, CSS, and JavaScript, building interactive and responsive web applications. </li>
+                        <li class="list-group-item">Developed and maintained automated web scraping solutions using Selenium, extracting data from various websites and storing it in MySQL for analysis and reporting.</li>
+                            <li class="list-group-item">Implemented Windows automation tasks using `pywin32` and `PyAutoGUI` to streamline processes, enhancing productivity and reducing manual workload.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="education" class="section">
+        <div class="container">
+            <div class="section-heading"><h2>Education</h2></div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="card p-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Anurag Engineering College, Hyderabad</h5>
+                            <p class="card-text mb-0">B.Tech in Computer Science Engineering (2020-2024) </p>
+                            <p class="card-text">CGPA: 7.0 </p>
+                            <hr>
+                            <h5 class="card-title">Resonance Junior college, Khammam</h5>
+                            <p class="card-text mb-0">MPC (2018-2020) </p>
+                            <p class="card-text">Percentage: 60% </p>
+                            <hr>
+                            <h5 class="card-title">Resonance info School, Khammam</h5>
+                            <p class="card-text mb-0">SSC (2018) </p>
+                            <p class="card-text">CGPA: 8.8 </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Devisricharan Vurlugonda. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
